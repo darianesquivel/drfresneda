@@ -1,0 +1,66 @@
+---
+const services = [
+  {
+    title: "Lesiones Deportivas",
+    description:
+      "Tratamiento especializado para atletas y deportistas de todos los niveles.",
+    icon: "🏃‍♂️",
+  },
+  {
+    title: "Cirugía Ortopédica",
+    description:
+      "Procedimientos quirúrgicos mínimamente invasivos para una recuperación más rápida.",
+    icon: "🔬",
+  },
+  {
+    title: "Rehabilitación",
+    description:
+      "Programas personalizados de fisioterapia y recuperación funcional.",
+    icon: "💪",
+  },
+  {
+    title: "Medicina Deportiva",
+    description:
+      "Prevención y tratamiento integral para optimizar el rendimiento deportivo.",
+    icon: "⚕️",
+  },
+  {
+    title: "Traumatología General",
+    description:
+      "Atención completa para fracturas, luxaciones y lesiones traumáticas.",
+    icon: "🦴",
+  },
+  {
+    title: "Consulta Especializada",
+    description: "Evaluación detallada y diagnóstico preciso de su condición.",
+    icon: "👨‍⚕️",
+  },
+];
+---
+
+<section id="servicios" class="min-h-dvh">
+  <div class="flex flex-col h-full justify-center items-center gap-6">
+    <h2 class="text-4xl lg:text-5xl font-bold">Servicios Especializados</h2>
+    <p class="text-lg max-w-2xl text-center">
+      Ofrezco una amplia gama de servicios médicos especializados en
+      traumatología y medicina deportiva para garantizar su bienestar y
+      recuperación.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container">
+      {
+        services.map((service, index) => (
+          <div class="border border-green-300 hover:shadow-lg transition-shadow rounded-2xl bg-green-100 p-4">
+            <div>
+              <div class="text-4xl mb-4">{service.icon}</div>
+              <h2 class="font-semibold">{service.title}</h2>
+            </div>
+            <div>
+              <p class="">{service.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

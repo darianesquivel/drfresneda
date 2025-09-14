@@ -1,0 +1,42 @@
+---
+import Header from "./Header.astro";
+---
+
+<section class="min-h-dvh flex flex-col items-center">
+  <Header />
+  <div
+    class="flex flex-col lg:flex-row items-center justify-center gap-6 container"
+  >
+    <!-- Texto -->
+    <div
+      class="flex-1 flex flex-col gap-6 items-center lg:items-start text-center lg:text-left"
+    >
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl">
+        Especialista en Traumatología y Lesiones Deportivas
+      </h1>
+
+      <p class="text-base sm:text-lg lg:text-xl max-w-xl">
+        Con más de 15 años de experiencia, ofrezco tratamientos especializados
+        en lesiones deportivas y traumatológicas, utilizando las técnicas más
+        avanzadas para tu recuperación completa.
+      </p>
+
+      <a
+        href="#contact"
+        aria-label="Ir a la sección de contacto"
+        class="bg-blue-700 text-sm text-white font-extrabold rounded-lg py-2 px-4 transition-transform duration-300 hover:scale-110 uppercase"
+      >
+        Agenda tu consulta
+      </a>
+    </div>
+
+    <!-- Imagen -->
+    <div class="flex-1 flex justify-center">
+      <img
+        src="/doctor.png"
+        alt="Especialista en traumatología"
+        class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full h-auto"
+      />
+    </div>
+  </div>
+</section>
