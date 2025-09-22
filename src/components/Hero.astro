@@ -2,7 +2,7 @@
 import Header from "./Header.astro";
 ---
 
-<section class="min-h-dvh flex flex-col items-center">
+<section class="min-h-dvh flex flex-col items-center bg-secondary">
   <Header />
   <div
     class="flex flex-col lg:flex-row items-center justify-center gap-6 container"
@@ -11,14 +11,19 @@ import Header from "./Header.astro";
     <div
       class="flex-1 flex flex-col gap-6 items-center lg:items-start text-center lg:text-left"
     >
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl">
-        Especialista en Traumatología y Lesiones Deportivas
+      <h1>
+        <span class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl">
+          Dr. Fresneda
+        </span>
+        <br />
+        <span class="text-2xl sm:text-3xl lg:text-4xl font-bold max-w-2xl"
+          >Especialista en Ortopedia y Traumatología.</span
+        >
       </h1>
 
       <p class="text-base sm:text-lg lg:text-xl max-w-xl">
-        Con más de 15 años de experiencia, ofrezco tratamientos especializados
-        en lesiones deportivas y traumatológicas, utilizando las técnicas más
-        avanzadas para tu recuperación completa.
+        Más de 15 años ayudando a pacientes a recuperar movilidad y calidad de
+        vida.
       </p>
 
       <a
