@@ -2,46 +2,67 @@
 import Header from "./Header.astro";
 ---
 
-<section class="min-h-dvh flex flex-col items-center bg-secondary">
+<section class="h-full flex flex-col items-center px-10 pb-10 bg-[#f9f9f9]">
   <Header />
   <div
-    class="flex flex-col lg:flex-row items-center justify-center gap-6 container"
+    class="h-full w-full flex items-center justify-center bg-gradient-to-br from-[#6669ff] to-[#73cafe] rounded-4xl shadow-2xl"
   >
-    <!-- Texto -->
     <div
-      class="flex-1 flex flex-col gap-6 items-center lg:items-start text-center lg:text-left"
+      class="flex flex-col lg:flex-row items-center justify-center gap-6 container"
     >
-      <h1>
-        <span class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl">
-          Dr. Fresneda
-        </span>
-        <br />
-        <span class="text-2xl sm:text-3xl lg:text-4xl font-bold max-w-2xl"
-          >Especialista en Ortopedia y Traumatología.</span
-        >
-      </h1>
-
-      <p class="text-base sm:text-lg lg:text-xl max-w-xl">
-        Más de 15 años ayudando a pacientes a recuperar movilidad y calidad de
-        vida.
-      </p>
-
-      <a
-        href="#contact"
-        aria-label="Ir a la sección de contacto"
-        class="bg-blue-700 text-sm text-white font-extrabold rounded-lg py-2 px-4 transition-transform duration-300 hover:scale-110 uppercase"
+      <!-- Texto -->
+      <div
+        class="flex-1 flex flex-col gap-6 items-center lg:items-start text-center lg:text-left text-white"
       >
-        Agenda tu consulta
-      </a>
-    </div>
+        <h1>
+          <span
+            class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl"
+          >
+            Dr. Fresneda
+          </span>
+          <br />
+          <span class="text-2xl sm:text-3xl lg:text-4xl font-bold max-w-2xl"
+            >Especialista en Ortopedia y Traumatología.</span
+          >
+        </h1>
 
-    <!-- Imagen -->
-    <div class="flex-1 flex justify-center">
-      <img
-        src="/doctor.png"
-        alt="Especialista en traumatología"
-        class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full h-auto"
-      />
+        <p class="text-base sm:text-lg lg:text-xl max-w-xl">
+          Más de 15 años ayudando a pacientes a recuperar movilidad y calidad de
+          vida.
+        </p>
+
+        <a
+          href="#contact"
+          aria-label="Ir a la sección de contacto"
+          class="bg-blue-700 text-sm text-white font-extrabold rounded-full py-2 px-4 transition-transform duration-300 hover:scale-110 uppercase"
+        >
+          <div class="flex gap-4 justify-center items-center text-white">
+            <p>Agenda tu consulta</p>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="w-6 h-6 fill-current"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m.47-13.53a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 1 1-1.06-1.06l1.72-1.72H8a.75.75 0 0 1 0-1.5h6.19l-1.72-1.72a.75.75 0 0 1 0-1.06"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Imagen -->
+      <div class="flex-1 flex justify-center">
+        <div
+          class="w-[300px] h-[300px] bg-amber-200 rounded-3xl shadow-2xl flex items-center justify-center"
+        >
+          <p>IMAGEN</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

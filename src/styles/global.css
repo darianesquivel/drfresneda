@@ -57,13 +57,12 @@ html {
   /* Principales */
   --color-primary: #0d1117; /* Azul gris muy oscuro para textos fuertes / headers */
   --color-secondary: #a9f5f0; /* Azul médico confiable (links, botones principales) */
-
   /* Acentos */
   --color-accent: #43a047; /* Verde salud / recuperación */
   --color-highlight: #f17ea6; /* Rosa cálido para detalles sutiles o llamadas a la acción */
 
   /* Fondos */
-  --color-bg: #f9fafb; /* Fondo general muy claro */
+  --color-bg-primary: #0a9a9e; /* Fondo general muy claro */
   --color-bg-alt: #ffffff; /* Fondo de tarjetas o secciones */
   --color-bg-muted: #e5e7eb; /* Fondos suaves, separadores */
 
