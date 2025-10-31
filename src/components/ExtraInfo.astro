@@ -1,8 +1,50 @@
-<div class="bg-accent flex gap-5">
-  <div>
-    <p>15</p>
-    <p>Anos de experiencia</p>
+---
+const extraInfo = [
+  {
+    title: "15",
+    description: "Años de experiencia",
+    icon: "⭐", // Icono de estrella
+  },
+  {
+    title: "+500",
+    description: "Pacientes atendidos",
+    icon: "🤝", // Icono de apretón de manos
+  },
+  {
+    title: "100%",
+    description: "Satisfacción garantizada",
+    icon: "✅", // Icono de check
+  },
+  {
+    title: "2",
+    description: "Certificaciones internacionales",
+    icon: "🌎", // Icono de mundo
+  },
+];
+---
+
+<section
+  id="extra-info"
+  class="flex flex-col justify-center items-center my-10 py-8"
+>
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 container max-w-6xl px-4">
+    {
+      extraInfo.map((info, index) => (
+        <div class="border-2 border-[#73cafe] rounded-2xl p-6 flex flex-col justify-center items-center bg-white shadow-md transition duration-300 hover:shadow-lg ">
+          {/* Contenedor del Icono y Título */}
+          {/* <div class="mb-2 text-4xl">{info.icon}</div> */}
+
+          {/* Título (Dato) */}
+          <div>
+            <h2 class="font-extrabold text-4xl text-[#73cafe]">{info.title}</h2>
+          </div>
+
+          {/* Descripción */}
+          <div class="mt-1 text-center">
+            <p class="text-gray-600 font-medium">{info.description}</p>
+          </div>
+        </div>
+      ))
+    }
   </div>
-  <div></div>
-  <div></div>
-</div>
+</section>
